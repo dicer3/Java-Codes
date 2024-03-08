@@ -12,6 +12,6 @@ class ShadowingClass {
 public class Shadowing {
    public static void main(String[] args) {
        Shadowing ob = new Shadowing();
-       ShadowingClass.InnerShadowing innerObj = ob.new InnerShadowing();
+       ///ShadowingClass.InnerShadowing innerObj = ob.new InnerShadowing();
    }    
 }
