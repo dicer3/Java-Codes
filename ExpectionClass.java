@@ -1,14 +1,32 @@
+import java.util.Scanner;
+
+class MyExpection extends Exception{
+    @Override
+    public String toString(){
+        return super.toString()+ " I am to String";
+    }
+
+    @Override
+    public String getMessage(){
+        return super.getMessage()+ " in my Expection";
+    }
+}
+
 public class ExpectionClass {
     public static void main(String[] args) {
-        int arr1[] = new int[20];
-        try {
-            arr1[21] = 3;
-        } catch(Exception e){
-            e.printStackTrace();
-
-            System.out.println("pragun -->");
-            System.out.println("see "+e);
+        int a;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a");
+        a = sc.nextInt();
+        if(a<9){
+            try {
+               throw new MyExpection();
+            } catch(Exception e){
+                System.out.println(e.getMessage());
+                System.out.println(e);
+            }
         }
+
 
     }
 }
