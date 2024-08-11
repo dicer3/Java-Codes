@@ -22,3 +22,5 @@ public class Polymorisphism2 {
         ob.fn1();
     }
 }
+// @Query("Select u from User u where u.Id=:c and u.Name=:k")
+// List<User1> getAllStudents(@Param("c") String k,@Param("k") String d);
